@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drawing Book", "Drawing Boo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Two Sum", "Two Sum\Two Sum.csproj", "{089E18D2-6D46-4923-B057-329133B5BCC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveZeroes", "MoveZeroes\MoveZeroes.csproj", "{6ED43E10-4D95-41FB-99C5-8E8B7C39C23D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoveZeroes", "MoveZeroes\MoveZeroes.csproj", "{6ED43E10-4D95-41FB-99C5-8E8B7C39C23D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupAnagrams", "GroupAnagrams\GroupAnagrams.csproj", "{CABC80FB-6BFC-4C95-BA9A-84B97EAD35E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6ED43E10-4D95-41FB-99C5-8E8B7C39C23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ED43E10-4D95-41FB-99C5-8E8B7C39C23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ED43E10-4D95-41FB-99C5-8E8B7C39C23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABC80FB-6BFC-4C95-BA9A-84B97EAD35E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABC80FB-6BFC-4C95-BA9A-84B97EAD35E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABC80FB-6BFC-4C95-BA9A-84B97EAD35E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABC80FB-6BFC-4C95-BA9A-84B97EAD35E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
