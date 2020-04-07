@@ -24,7 +24,10 @@ namespace CountingElements
             Console.WriteLine($"Result: {CountElements(arr6)}");
 
         }
-
+        
+        //35 test cases passed.
+        //Runtime: 92 ms
+        //Memory Usage: 24.1 MB
         public static int CountElements(int[] arr)
         {
             int arrLenght = arr.Length;
