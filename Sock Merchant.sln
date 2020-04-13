@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Two Sum", "Two Sum\Two Sum.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoveZeroes", "MoveZeroes\MoveZeroes.csproj", "{6ED43E10-4D95-41FB-99C5-8E8B7C39C23D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupAnagrams", "GroupAnagrams\GroupAnagrams.csproj", "{CABC80FB-6BFC-4C95-BA9A-84B97EAD35E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupAnagrams", "GroupAnagrams\GroupAnagrams.csproj", "{CABC80FB-6BFC-4C95-BA9A-84B97EAD35E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingElements", "CountingElements\CountingElements.csproj", "{F5A189FF-95BF-49D7-823E-70014D86C99B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountingElements", "CountingElements\CountingElements.csproj", "{F5A189FF-95BF-49D7-823E-70014D86C99B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastStoneWeight", "LastStoneWeight\LastStoneWeight.csproj", "{5568142E-307A-4591-9A60-BEA9B29C65E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F5A189FF-95BF-49D7-823E-70014D86C99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A189FF-95BF-49D7-823E-70014D86C99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5A189FF-95BF-49D7-823E-70014D86C99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5568142E-307A-4591-9A60-BEA9B29C65E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5568142E-307A-4591-9A60-BEA9B29C65E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5568142E-307A-4591-9A60-BEA9B29C65E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5568142E-307A-4591-9A60-BEA9B29C65E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
