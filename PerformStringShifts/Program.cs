@@ -9,72 +9,92 @@ namespace PerformStringShifts
             Console.WriteLine("Hello World!");
 
             string s = "abc";
-            int[][] data = new int[][]
-            {
-                new int[] { 0, 1},
-                new int[] {1,2 }
-            };
-            //[[0,1],[1,2]]
-            //s = , shift = [[1, 1],[1,1],[0,2],[1,3]]
+            int[][] data = new int[][]  { new int[] { 0, 1}, new int[] {1,2 } };
 
             string s1 = "abcdefg";
-            int[][] data1 = new int[][]
-            {
-                new int[] { 1, 1},
-                new int[] { 1, 1},
-                new int[] {0, 2 },
-                new int[] { 1, 3}
-            };
+            int[][] data1 = new int[][] { new int[] { 1, 1}, new int[] { 1, 1}, new int[] {0, 2 }, new int[] { 1, 3} };
 
             Console.WriteLine(StringShift(s, data));
             Console.WriteLine(StringShift(s1, data1));
-        }
 
+            string s2 = "wpdhhcj";
+            int[][] data2 = new int[][] { new int[] { 0, 7 }, new int[] { 1, 7 }, new int[] { 1, 0 }, new int[] { 1, 3 }, new int[] { 0, 3 }, new int[] { 0, 6 }, new int[] { 1, 2 } };
+            Console.WriteLine(StringShift(s2, data2));
+
+            //"hcjwpdh"
+
+            //"yisxjwry"
+            //[[1, 8],[1,4],[1,3],[1,6],[0,6],[1,4],[0,2],[0,1]]
+
+            string s3 = "yisxjwry";
+            int[][] data3 = new int[][] { new int[] { 1, 8 }, new int[] { 1, 4 }, new int[] { 1, 3 }, new int[] { 1, 6 }, new int[] { 0, 6 }, new int[] { 1, 4 }, new int[] { 0, 2 }, new int[] { 0, 1 } };
+
+            Console.WriteLine(StringShift(s3, data3));
+
+        }
 
         public static string StringShift(string s, int[][] shift)
         {
             int totalShift = 0;
 
-            for (int i = 0; i < shift.Length; i++)
+            foreach (int[] a in shift)
             {
-                int direction = shift[i][0];
-                int amount = shift[i][1];
+                int direction = a[0];
+                int amount = a[1];
 
                 if (direction == 0)
                 {
-                    //left shift
-                    totalShift -= amount;
+                    totalShift += amount;
                 }
                 else
                 {
-                    //right shift
-                    totalShift += amount;
+                    totalShift -= amount;
                 }
             }
 
             string frontShift;
             string backShift;
 
-            if (totalShift < 0)
+            if (totalShift > s.Length || -totalShift > s.Length)
             {
-                //left shit
-                frontShift = s.Substring(totalShift);
-                backShift = s.Substring(0, totalShift);
-            }
-            else if (totalShift > 0)
-            {
-                //right shift
-                frontShift = s.Substring(s.Length - totalShift, totalShift);
-                backShift = s.Substring(0, s.Length - totalShift);
-            }
-            else
-            {
-                //no shift
-                return s;
+                totalShift %= s.Length;
+            }            
+            
+            if(totalShift < 0) {
+                totalShift = s.Length + totalShift;
             }
 
+            frontShift = s.Substring(totalShift);
+            backShift = s.Substring(0, totalShift);
             return frontShift + backShift;
         }
+
+        public static string StringShiftOld2(string s, int[][] shift)
+        {
+            int totalShift = 0;
+
+            foreach (int[] a in shift)
+            {
+                totalShift += (a[0] == 0) ? a[1] : -a[1];
+            }
+
+            //for (int i = 0; i < shift.Length; i++)
+            //{
+            //    totalShift += (shift[i][0] == 0) ? shift[i][1] : -shift[i][1];
+            //}
+
+            if (totalShift > s.Length || -totalShift > s.Length)
+            {
+                totalShift = totalShift % s.Length;
+            }
+
+            if (totalShift < 0)
+            {
+                totalShift = s.Length + totalShift;
+            }
+            return s.Substring(totalShift) + s.Substring(0, totalShift);
+        }          
+    
     }
 }
 
