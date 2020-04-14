@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupAnagrams", "GroupAnagr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountingElements", "CountingElements\CountingElements.csproj", "{F5A189FF-95BF-49D7-823E-70014D86C99B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastStoneWeight", "LastStoneWeight\LastStoneWeight.csproj", "{5568142E-307A-4591-9A60-BEA9B29C65E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LastStoneWeight", "LastStoneWeight\LastStoneWeight.csproj", "{5568142E-307A-4591-9A60-BEA9B29C65E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformStringShifts", "PerformStringShifts\PerformStringShifts.csproj", "{D01899D7-428C-479F-877B-D93BA1672A73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{5568142E-307A-4591-9A60-BEA9B29C65E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5568142E-307A-4591-9A60-BEA9B29C65E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5568142E-307A-4591-9A60-BEA9B29C65E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01899D7-428C-479F-877B-D93BA1672A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01899D7-428C-479F-877B-D93BA1672A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01899D7-428C-479F-877B-D93BA1672A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01899D7-428C-479F-877B-D93BA1672A73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
