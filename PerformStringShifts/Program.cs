@@ -69,7 +69,7 @@ namespace PerformStringShifts
             return frontShift + backShift;
         }
 
-        public static string StringShiftOld2(string s, int[][] shift)
+        public static string StringShift2(string s, int[][] shift)
         {
             int totalShift = 0;
 
@@ -78,19 +78,14 @@ namespace PerformStringShifts
                 totalShift += (a[0] == 0) ? a[1] : -a[1];
             }
 
-            //for (int i = 0; i < shift.Length; i++)
-            //{
-            //    totalShift += (shift[i][0] == 0) ? shift[i][1] : -shift[i][1];
-            //}
-
             if (totalShift > s.Length || -totalShift > s.Length)
             {
-                totalShift = totalShift % s.Length;
+                totalShift %= s.Length;
             }
 
             if (totalShift < 0)
             {
-                totalShift = s.Length + totalShift;
+                totalShift += s.Length;
             }
             return s.Substring(totalShift) + s.Substring(0, totalShift);
         }          
